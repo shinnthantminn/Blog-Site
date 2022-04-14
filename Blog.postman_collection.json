@@ -1,0 +1,1159 @@
+{
+	"info": {
+		"_postman_id": "e21c4ba6-3f48-47fd-a299-b30f1722e1cb",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin Managements",
+			"item": [
+				{
+					"name": "all admin from server ",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/get/All",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"get",
+								"All"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODQ0MjMwLCJleHAiOjE2NDk4NDc4MzB9.MvqTJknKiIZyJ9D1VZSd8PG029kyVCT_glbO65llF8w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "shinthantmin32@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU1YzU5YjgwMjIwODY1NzZiN2JjY2IiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6WyI2MjU1YzU5YjgwMjIwODY1NzZiN2JjY2YiXSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTQuOTg4WiIsIl9fdiI6MCwiaWF0IjoxNjQ5Nzk0NTY2LCJleHAiOjE2NDk3OTgxNjZ9.QDXpH8zhpU19vhWJAbkgtSKQ3fS4kn4PhTP-avOB6Vw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "htun htun",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "htun@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/create",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/6256692525335525385d5010",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"6256692525335525385d5010"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU1YzU5YjgwMjIwODY1NzZiN2JjY2IiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTQuOTg4WiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODMwMTU2LCJleHAiOjE2NDk4MzM3NTZ9.bPR_XXOVXcrCoMsCk1H1xY01ZDT5e7yuh9gxywCULsI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/62566a6a225f570d6898d318",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"62566a6a225f570d6898d318"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add role by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODMxNzQyLCJleHAiOjE2NDk4MzUzNDJ9.x9-ZF301j2lzao2oY9sq6bqfDNpA_3Axjh0NJHXep3k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "adminId",
+									"value": "62566ab0cd99bcfa4a0a61ba",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "6255c59b8022086576b7bcd1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/add/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"add",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove role by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODMxNzQyLCJleHAiOjE2NDk4MzUzNDJ9.x9-ZF301j2lzao2oY9sq6bqfDNpA_3Axjh0NJHXep3k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "adminId",
+									"value": "62566ab0cd99bcfa4a0a61ba",
+									"type": "text"
+								},
+								{
+									"key": "roleId",
+									"value": "6255c59b8022086576b7bcd1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/remove/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"remove",
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add permit by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODMyODMzLCJleHAiOjE2NDk4MzY0MzN9.2BU835lOyAs_0iqD_UdmvSr1T2vptEtmhUELenp-ggo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "adminId",
+									"value": "62566ab0cd99bcfa4a0a61ba",
+									"type": "text"
+								},
+								{
+									"key": "permitId",
+									"value": "6255c59b8022086576b7bcd3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/add/permit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"add",
+								"permit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove permit by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODM0MDQ1LCJleHAiOjE2NDk4Mzc2NDV9.rLco7We9M8ve1ZFRboiOmdAUN_bTcVyZ0mGxW2POkFA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "adminId",
+									"value": "62566ab0cd99bcfa4a0a61ba",
+									"type": "text"
+								},
+								{
+									"key": "permitId",
+									"value": "6255c59b8022086576b7bcd3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/admin/remove/permit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"admin",
+								"remove",
+								"permit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "role Managements",
+			"item": [
+				{
+					"name": "all role from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add role by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODQzMjExLCJleHAiOjE2NDk4NDY4MTF9.EQOeFmLsXl_Em_iCdrCBQuSNRKH_M1WE29fFx-KX-yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "co-admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/role",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get single role by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/role/6255c59b8022086576b7bcd1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role",
+								"6255c59b8022086576b7bcd1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch role by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODQzMjExLCJleHAiOjE2NDk4NDY4MTF9.EQOeFmLsXl_Em_iCdrCBQuSNRKH_M1WE29fFx-KX-yA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "not newbie",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/role/62569c1a1ef63e81de71187f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role",
+								"62569c1a1ef63e81de71187f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete role by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODQ0MjMwLCJleHAiOjE2NDk4NDc4MzB9.MvqTJknKiIZyJ9D1VZSd8PG029kyVCT_glbO65llF8w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/role/62569c1a1ef63e81de71187f",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role",
+								"62569c1a1ef63e81de71187f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add permit by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTJUMTg6MzE6NTUuMDEwWiJ9XSwicGVybWl0IjpbXSwiY3JlYXRlZCI6IjIwMjItMDQtMTNUMDY6MDk6NDAuODkzWiIsIl9fdiI6MCwiaWF0IjoxNjQ5ODQ0MjMwLCJleHAiOjE2NDk4NDc4MzB9.MvqTJknKiIZyJ9D1VZSd8PG029kyVCT_glbO65llF8w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "roleId",
+									"value": "6256a03c5b164959ab384400",
+									"type": "text"
+								},
+								{
+									"key": "permitId",
+									"value": "6255c59b8022086576b7bcd7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/role/add/permit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role",
+								"add",
+								"permit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove permit by permission",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NDU5ODUsImV4cCI6MTY0OTg0OTU4NX0.6ZGghUJLodcS7JEDQelV1b6wMyjglwDY2Z1IIxH9hik",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "roleId",
+									"value": "6256a03c5b164959ab384400",
+									"type": "text"
+								},
+								{
+									"key": "permitId",
+									"value": "6255c59b8022086576b7bcd7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/role/remove/permit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"role",
+								"remove",
+								"permit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "permit Managements",
+			"item": [
+				{
+					"name": "all permit from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/permit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"permit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add permit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NzE5ODAsImV4cCI6MTY0OTg3NTU4MH0.9VDHqrbApeWz9PYPADR84sZveHd3L4x9RXj0EPwU0nU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "I am sexy guy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/permit",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"permit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single permit get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/permit/6255c59b8022086576b7bcd3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"permit",
+								"6255c59b8022086576b7bcd3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch permit ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NzE5ODAsImV4cCI6MTY0OTg3NTU4MH0.9VDHqrbApeWz9PYPADR84sZveHd3L4x9RXj0EPwU0nU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "i am hot guy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/permit/62570c79e3215dac881009cf",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"permit",
+								"62570c79e3215dac881009cf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete permit",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NzE5ODAsImV4cCI6MTY0OTg3NTU4MH0.9VDHqrbApeWz9PYPADR84sZveHd3L4x9RXj0EPwU0nU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/permit/62570c79e3215dac881009cf",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"permit",
+								"62570c79e3215dac881009cf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category Managements",
+			"item": [
+				{
+					"name": "all category from server",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NzM4MTQsImV4cCI6MTY0OTg3NzQxNH0.0NvoQedoH8ep_vZ4zReBAcyX2uzuad8DY_7plshPM7w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "javaScript",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/category/625713a386c8e86265287811",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"category",
+								"625713a386c8e86265287811"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch category ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NzM4MTQsImV4cCI6MTY0OTg3NzQxNH0.0NvoQedoH8ep_vZ4zReBAcyX2uzuad8DY_7plshPM7w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "javaScript",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/category/625713a386c8e86265287811",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"category",
+								"625713a386c8e86265287811"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk4NzM4MTQsImV4cCI6MTY0OTg3NzQxNH0.0NvoQedoH8ep_vZ4zReBAcyX2uzuad8DY_7plshPM7w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/category/625713a386c8e86265287811",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"category",
+								"625713a386c8e86265287811"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Managements",
+			"item": [
+				{
+					"name": "all post from server",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk5NDUwMTgsImV4cCI6MTY0OTk0ODYxOH0.kVurdFCKfdtz3-lEOue1MVMMy7ufklrelIVkmBTE-Do",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/post",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add post ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk5NDUwMTgsImV4cCI6MTY0OTk0ODYxOH0.kVurdFCKfdtz3-lEOue1MVMMy7ufklrelIVkmBTE-Do",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "header",
+									"value": "javaScript",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/Screenshot from 2022-04-14 23-41-36.png"
+								},
+								{
+									"key": "content",
+									"value": "JavaScript was awasomes",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "62585299966d9b2ff50af972",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/post",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/post/62585b645dbec7ffb8a3a52a",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"post",
+								"62585b645dbec7ffb8a3a52a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "patch post ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU2NjkyNTI1MzM1NTI1Mzg1ZDUwMTAiLCJuYW1lIjoiU2hpbm4gVGhhbnQgTWlubiIsImVtYWlsIjoic2hpbnRoYW50bWluMzJAZ21haWwuY29tIiwicm9sZSI6W3siX2lkIjoiNjI1NWM1OWI4MDIyMDg2NTc2YjdiY2NmIiwibmFtZSI6ImFkbWluIiwicGVybWl0IjpbIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkMyIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNSIsIjYyNTVjNTliODAyMjA4NjU3NmI3YmNkNyJdLCJjcmVhdGVkIjoiMjAyMi0wNC0xMlQxODozMTo1NS4wMTBaIn1dLCJwZXJtaXQiOltdLCJjcmVhdGVkIjoiMjAyMi0wNC0xM1QwNjowOTo0MC44OTNaIiwiX192IjowLCJpYXQiOjE2NDk5NTgzNjksImV4cCI6MTY0OTk2MTk2OX0.eTMdzbImzP0D9My4X-Tji13Ws-JVS1lixsGE0dPwLyk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/terry/Pictures/tree-736885__480.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/post/62585b645dbec7ffb8a3a52a",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"post",
+								"62585b645dbec7ffb8a3a52a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
